@@ -5,10 +5,8 @@ import de.c4vxl.gamemanager.language.Language
 import de.c4vxl.gamemanager.utils.ResourceUtils
 import dev.jorel.commandapi.CommandAPI
 import dev.jorel.commandapi.CommandAPIPaperConfig
-import io.github.mayo8432.spleef.handler.BlockBreakHandler
-import io.github.mayo8432.spleef.handler.GameHandler
-import io.github.mayo8432.spleef.handler.InteractionHandler
-import io.github.mayo8432.spleef.handler.ProjectileHandler
+import io.github.mayo8432.spleef.handler.*
+import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 import java.util.logging.Logger
 
@@ -51,6 +49,13 @@ class Main : JavaPlugin() {
         BlockBreakHandler()
         InteractionHandler()
         ProjectileHandler()
+        ConnectionHandler()
+
+        // Lobby handler
+        // Only enable if GameLobby plugin is enabled
+        if (Bukkit.getPluginManager().isPluginEnabled("GameLobby")) {
+            LobbyHandler()
+        }
     }
 
     override fun onDisable() {

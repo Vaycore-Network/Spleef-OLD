@@ -1,2 +1,3 @@
 "shovel.name" : "<gold><b>Right click to shoot snowballs</b></gold>"
 "message.cantcraft" : "<red><i>You cant craft that here</i></red>"
+"queue.waiting": "<gray>Waiting for other players$0 (<white>$1/$2</white>)</gray>"
