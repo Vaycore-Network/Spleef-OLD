@@ -1,6 +1,5 @@
 package io.github.mayo8432.spleef
 
-import de.c4vxl.gamemanager.gma.game.Game
 import de.c4vxl.gamemanager.language.Language
 import de.c4vxl.gamemanager.utils.ResourceUtils
 import dev.jorel.commandapi.CommandAPI
